@@ -104,7 +104,7 @@ helm install elasticsearch elastic/elasticsearch \
   --namespace logging \
   --set replicas=1 \
   --set volumeClaimTemplate.storageClassName=gp2 \
-  --set persistence.labels.enabled=true
+  --set persistence.labels.enabled=true elastic/elasticsearch -n logging
 ```
 ## Step 5: Retrieve Elasticsearch Credentials
 ```bash
